@@ -107,10 +107,10 @@
     .navbar {
       padding: 10px;
     }
-     .logo-left{
+    /* .logo-left{
       display: flex;
      } */
-      .logo-left-txt {
+     /* .logo-left-txt {
       font-size: 3px!important;
-     } 
+     } */
   }

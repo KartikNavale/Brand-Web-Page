@@ -2,11 +2,12 @@ import React from "react";
 import "./Home.css";
 import Footer from "./Footer";
 import Header from "./Header";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
-     <Header />
+      <Header />
       <div>
         <div>
           <img src="img\Slider Bg.png" alt="" style={{ width: "100%" }} />
@@ -20,11 +21,13 @@ const Home = () => {
               produce <br />
               customized solutions for your needs.
             </p>
-            <img
-              src="img\Button With Icon (2).png"
-              alt=""
-              className="button-img"
-            />
+            <Link to="/products">
+              <img
+                src="img/Button With Icon (2).png"
+                alt=""
+                className="button-img"
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -49,11 +52,14 @@ const Home = () => {
             scientific <br /> perspectives, would be the solution to the real
             needs of the sector.
           </p>
+          <Link to="/AboutUs">
           <img
             src="img\Button With Icon (1).png"
             alt=""
             className="button-img"
           />
+          </Link>
+         
           <a
             href="/quality"
             style={{ color: "black", fontSize: "12px", marginLeft: "5px" }}

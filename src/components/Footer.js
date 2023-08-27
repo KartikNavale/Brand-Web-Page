@@ -11,14 +11,14 @@ const Footer = () => {
             Contact Us
           </div>
           <div className="footer-2">
-            <div className="footer-2-1">
+            <div className="footer-2-1 footer-media">
               <img src="img\Phone.png" alt="" className="footer-logo" />
               <div className="footer-2-1-p">
                 <p>Phone Number</p>
                 <p className="footer-bold">+0(850)544 7514</p>
               </div>
             </div>
-            <div className="footer-2-1">
+            <div className="footer-2-1 footer-media">
               <img src="img\Msg.png" alt="" className="footer-logo" />
               <div className="footer-2-1-p">
                 <p>E-Mail Address</p>

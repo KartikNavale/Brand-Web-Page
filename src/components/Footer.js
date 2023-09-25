@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 const Footer = () => {
+  useEffect(()=> {
+    AOS.init({duration: 2000})
+  },[]);
     return (
       <>
-<footer className="footer-bg" id="contact">
+<footer className="footer-bg" id="contact"  data-aos="fade-up">
         <div className="footer-main">
           <div className="footer-1">
             Have a any questions? <br />

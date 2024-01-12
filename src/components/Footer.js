@@ -9,7 +9,8 @@ const Footer = () => {
   },[]);
     return (
       <>
-<footer className="footer-bg" id="contact"  data-aos="fade-up">
+<footer className="footer-bg" id="contact"  >
+{/* data-aos="fade-up" */}
         <div className="footer-main">
           <div className="footer-1">
             Have a any questions? <br />
@@ -87,7 +88,10 @@ const Footer = () => {
                 Cake pudding lollipop pastry cupcake chocolate. <br /> Gummi
                 bears halvah sesame snaps.
               </p>
+              <div style={{display:"flex", justifyContent:"center"}}>
               <img src="img\Button With Icon.png" alt=""  className="button-img"/>
+              </div>
+              
             </div>
           </div>
           
@@ -95,8 +99,8 @@ const Footer = () => {
         
       </footer>
       <div className="footer-end">
-            <p>Copyright by Erkan Giris  |  All rights reserverd</p>
-            <p>Our Privacy and Personal Data Protection Policy  |   Terms and Conditions of Use</p>
+            <p className="footer-end-child">Copyright by Erkan Giris  |  All rights reserverd</p>
+            <p className="footer-end-child">Our Privacy and Personal Data Protection Policy  |   Terms and Conditions of Use</p>
           </div>
       </>
   );

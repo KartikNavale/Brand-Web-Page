@@ -1,0 +1,21 @@
+
+/* Products.css start */
+.product-card-main {
+    display: flex;
+    justify-content: center;
+}
+.product-card {
+    width: 16rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .product-card-main {
+        display: block;
+    }
+    .product-card {
+        width: 23rem;
+        margin-left: 30px;
+    }
+}
+/* Products.css end */

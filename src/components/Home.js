@@ -4,22 +4,22 @@ import "./Home.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Link } from 'react-router-dom';
-import AOS from "aos";
-import 'aos/dist/aos.css'
+// import AOS from "aos";
+// import 'aos/dist/aos.css'
 
 const Home = () => {
-  useEffect(()=> {
-    AOS.init({duration: 2000})
-  },[]);
+  // useEffect(()=> {
+  //   AOS.init({duration: 2000})
+  // },[]);
   return (
     <>
       <Header />
       <div>
         <div>
           <motion.img src="img\Slider Bg.png" alt="" style={{ width: "100%" }} 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          // initial={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 3 }}
           />
           <div class="overlay">
             <p className="para-1">
@@ -47,9 +47,10 @@ const Home = () => {
         className="div-main "
         style={{ width: "100%", display: "flex" }}
         id="Solutions"
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
-        <div className="div-1" style={{ width: "54%", alignItems: "left" }} data-aos="fade-right">
+        <div className="div-1" style={{ width: "54%", alignItems: "left" }} >
+        {/* data-aos="fade-right" */}
           <p className="head-lighttxt">WHO WE ARE</p>
           <p className="main-txt">
             Crosson is an international group <br />
@@ -78,7 +79,8 @@ const Home = () => {
             Quality Certificates
           </a>
         </div>
-        <div className="div-2" style={{ width: "46%" }}  data-aos="fade-left">
+        <div className="div-2" style={{ width: "46%" }}  >
+        {/* data-aos="fade-left" */}
           <div className="div-2child">
             <div>
               <img src="img\Icon (2).png" alt="" className="div-2child-img" />
@@ -121,16 +123,19 @@ const Home = () => {
       {/* First div end */}
 
       {/* Secound div start */}
-      <div className="bg-image-div" id="Softwares" data-aos="fade-up">
+      <div className="bg-image-div" id="Softwares">
+      {/* data-aos="fade-up" */}
         <div className="sec-div-main">
-          <div className="div-1" style={{ width: "60%", marginTop: "80px" }}  data-aos="fade-left">
+          <div className="div-1" style={{ width: "60%", marginTop: "80px" }}  >
+          {/* data-aos="fade-left" */}
             <p className="head-lighttxt">WHAT WE DO</p>
             <p className="main-txt">
               With our flexible production capacity and <br /> high technology,
               we produce customized <br /> solutions for your needs.
             </p>
           </div>
-          <div className="div-20"  data-aos="fade-right">
+          <div className="div-20">
+          {/* data-aos="fade-right" */}
             <div className="div-2child" style={{ marginTop: "60px" }}>
               <div>
                 <img src="img\Machines.png" alt="" className="div-2child-img" />
@@ -142,7 +147,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bottom-flex"  data-aos="fade-up">
+        <div className="bottom-flex" >
+        {/* data-aos="fade-up" */}
           <div className="bottom-flex-child">
             <img src="img\Union1.png" alt="" className="div-2child-img" />
             <p className="bottom-flex-para">
@@ -178,8 +184,10 @@ const Home = () => {
       {/* Secound div end */}
 
       {/* Third div start */}
-      <div className="third-div-main" id="Services" data-aos="fade-up">
-        <div className="third-div1" data-aos="fade-right">
+      <div className="third-div-main" id="Services" >
+      {/* data-aos="fade-up" */}
+        <div className="third-div1" >
+        {/* data-aos="fade-right" */}
           <div className="third-div-p">
             <p className="third-div1-p1">Filling and Packaging Machines</p>
             <p className="third-div-p2">
@@ -203,7 +211,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="third-div2" data-aos="fade-left">
+        <div className="third-div2" >
+        {/* data-aos="fade-left" */}
           <div className="third-div2-1">
             <div className="div-2child">
               <div>
@@ -251,7 +260,8 @@ const Home = () => {
       {/* Third div end */}
 
       {/* Fourth div start */}
-      <div className="fourth-div" id="Corporate" data-aos="fade-up">
+      <div className="fourth-div" id="Corporate" >
+      {/* data-aos="fade-up" */}
         <div className="fourth-div-1">
           <div className="fourth-div-p1">HOW WE DO</div>
           <div className="fourth-div-p2">A journey from design to product.</div>
@@ -310,9 +320,11 @@ const Home = () => {
       {/* Fourth div start */}
 
       {/* Fifth div start */}
-      <div className="fifth-div" id="News" data-aos="fade-up">
+      <div className="fifth-div" id="News">
+      {/* data-aos="fade-up" */}
         <div className="fifth-div-child">
-          <div className="fourth-div-1" data-aos="fade-up">
+          <div className="fourth-div-1" >
+          {/* data-aos="fade-up" */}
             <div className="fourth-div-p1">COMPANY NEWS</div>
             <div className="fourth-div-p2">News from Crosson</div>
             <div className="fourth-div-p3">
@@ -323,7 +335,8 @@ const Home = () => {
           </div>
           <div className="fifth-div2">
             <div className="card5">
-              <img className="card5-img" src="img\Image5.png" alt="" data-aos="fade-right"/>
+              <img className="card5-img" src="img\Image5.png" alt="" />
+              {/* data-aos="fade-right" */}
               <div className="card5-body">
                 <h5 className="card5-title">
                   Crosson Holding’s 58th <br /> ordinary general assembly <br />
@@ -342,7 +355,8 @@ const Home = () => {
               </div>
             </div>
             <div className="card5">
-              <img className="card5-img" src="img\Image5.1.png" alt=""  data-aos="fade-left"/>
+              <img className="card5-img" src="img\Image5.1.png" alt=""/>
+              {/* data-aos="fade-left" */}
               <div className="card5-body">
                 <h5 className="card5-title">
                   Crosson Holding’s new <br /> Board of Directors has been{" "}

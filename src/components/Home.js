@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import "./Home.css";
+import "./style.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Link } from 'react-router-dom';
